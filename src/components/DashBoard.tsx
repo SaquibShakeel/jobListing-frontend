@@ -32,7 +32,7 @@ const DashBoard = (props: Prop) => {
     );
 
   return (
-    <div className="px-20 grid grid-cols-2 items-start gap-10 py-10">
+    <div className="sm:px-20 px-5 grid sm:grid-cols-2 grid-cols-1 items-start gap-10 py-10">
       {props?.data?.map((job, index) => (
         <JobCard key={index} job={job} />
       ))}

@@ -36,11 +36,11 @@ const Header = ({ setJobData, setModalOpen }: Props) => {
     setSearch("");
   };
   return (
-    <header className="w-full h-20 bg-[#8294C4] px-20 flex items-center justify-between">
-      <h1 className="text-[30px] font-bold">Job Listings</h1>
-      <div className="flex items-center justify-center">
+    <header className="w-full py-2 bg-[#8294C4] sm:px-20 p-5 flex sm:items-center items-start sm:flex-row flex-col justify-between">
+      <h1 className="text-[30px] font-bold shrink-0" >Job Listings</h1>
+      <div className="flex sm:flex-row flex-col-reverse sm: self-end sm:items-center items-end justify-center sm:my-0 my-1">
         <button
-          className="text-[18px] font-semibold rounded-full mr-1 bg-[#ACB1D6] hover:bg-[#FFEAD2] ease-in-out duration-300 py-[5px] px-[1rem]"
+          className="text-[18px] font-semibold rounded-full sm:mr-1 mr-0 sm:mt-0 mt-1 bg-[#ACB1D6] hover:bg-[#FFEAD2] shrink-0 ease-in-out duration-300 py-[5px] px-[1rem]"
           onClick={() => setModalOpen(true)}
         >
           Post a Job
@@ -52,7 +52,7 @@ const Header = ({ setJobData, setModalOpen }: Props) => {
             </p>
           )}
           <input
-            className={`p-2 rounded-full pl-4 pr-[82px] border-none outline-none ${isEmpty? 'bg-red-200' : 'bg-[#FFEAD2]'} w-[300px]`}
+            className={`p-2 rounded-full pl-4 pr-[82px] border-none outline-none ${isEmpty? 'bg-red-200' : 'bg-[#FFEAD2]'} sm:w-[300px] w-full`}
             type="text"
             name="search"
             id="search"
