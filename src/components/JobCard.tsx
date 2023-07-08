@@ -12,7 +12,7 @@ type Job = {
 const JobCard = (props: JobCardProps) => {
   const { profile, desc, exp, techs } = props.job;
   return (
-    <div className="border-black border-2 rounded-lg p-5 w-full">
+    <div className="border-2 rounded-lg p-5 w-full bg-[#FFEAD2] shadow-md">
       <div className="flex items-center justify-between">
         <div className="sm:text-[24px] text-lg font-semibold">{profile}</div>
         <div className="text-[#8294C4] font-semibold shrink-0">{exp}+ years</div>

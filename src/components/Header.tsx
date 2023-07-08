@@ -38,14 +38,14 @@ const Header = ({ setJobData, setModalOpen }: Props) => {
   return (
     <header className="w-full py-2 bg-[#8294C4] sm:px-20 p-5 flex sm:items-center items-start sm:flex-row flex-col justify-between">
       <h1 className="text-[30px] font-bold shrink-0" >Job Listings</h1>
-      <div className="flex sm:flex-row flex-col-reverse sm: self-end sm:items-center items-end justify-center sm:my-0 my-1">
+      <div className="flex sm:flex-row flex-col-reverse sm: self-end sm:items-center items-end justify-center sm:my-0 my-1 sm:w-auto w-full">
         <button
           className="text-[18px] font-semibold rounded-full sm:mr-1 mr-0 sm:mt-0 mt-1 bg-[#ACB1D6] hover:bg-[#FFEAD2] shrink-0 ease-in-out duration-300 py-[5px] px-[1rem]"
           onClick={() => setModalOpen(true)}
         >
           Post a Job
         </button>
-        <form onSubmit={handleSubmit} className="relative">
+        <form onSubmit={handleSubmit} className="relative w-full">
           {isEmpty && (
             <p className="text-xs text-red-500 font-semibold absolute -bottom-4 left-4">
               Please enter a keyword
